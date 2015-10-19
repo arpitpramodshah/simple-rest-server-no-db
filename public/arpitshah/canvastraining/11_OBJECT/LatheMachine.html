@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+Lathe Machine (Object)
+</head>
+<body>
+<!--
+
+!-->
+</body>
+<script>
+var lathe = {
+	type: "engine lathe",
+	material: "wood",
+	tool: "edge cutter",
+	products: function(production){
+		for(i = production.length; i <= production.length; i++){
+			console.log("Tool will move " + i + " distance.")
+		}
+	},
+	modes_of_use: function(mode){
+		if(mode == "Between Center"){
+			console.log("Between Center Mode");
+		} else if (mode == "face Work"){
+			console.log("Face Work");
+		} else if (mode == "Eccentric Turning"){
+			console.log("Eccentric Turning");
+		}
+	},
+}
+lathe.products(prompt("Please select the product"));
+lathe.modes_of_use(prompt("Please select the mode: Between Center, Face Work, Eccentric Turning"));
+console.log(lathe);
+</script>
+
+</html>
