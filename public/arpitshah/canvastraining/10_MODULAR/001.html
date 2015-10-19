@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+QUESTION NO. 1S
+</head>
+<body>
+	<!--
+All programs you need to create textbox(es) for user input and onclick of button you need to process the user entered value.
+you should have two function 1 which you are going to execute on click of button and other which does actual calculation. you should never have alert statement in calculation related function.
+example:  function btnClick(){
+                     var x= XX, y=YY, z=ZZ;
+                     alert("My result is " + calculationFunc(x,y,z))
+                }
+1. Check if user entered value is a valid number or not.
+ if number alert "Its a number" or alert "its a string"
+2. Same as 1. but in addition if its a number check if its integer or float. (1.00 or 1 are integer,  1.01 is float) and alert accordingly.
+3. same as 2. but in addition if its integer check if its even or odd. and alert accordingly.
+4. Same as 2. (Check if its integer or float) if its integer alert "Sum of 0 to X  = Y" example
+   if user enters 5 you should alert   Sum of 0 to 5 =  15 (i.e. 0+1+2+3+4+5)
+5. Same as 2. (Check if its integer or float) if its integer between 0 to 6 display related day of the week
+    i.e 0 = Monday, 1=Tuesday.... 6=Sunday.   if number is not between 0 to 6 alerr "out of range"
+6. take two textboxes check if they both are number or not if numbers alert sum of both of them
+     if i enter  1 & 3  i should get 4 in alert
+     !-->
+</body>
+<script>
+function global(a){
+	if (validNumber(a)){
+		if (floatNumber(a)){
+			if (EvenNumber(a)){
+				console.log(addSum(a));
+			} else if (EvenNumber(a) == false) {
+				console.log(addSum(a));
+			}
+		} console.log(floatNumber(a));
+	}console.log(validNumber(a));
+}
+global(5668);
+
+function validNumber(a){
+	if (!isNaN(a)){
+		return true;
+	} else {
+		return false;
+	};
+};
+
+function floatNumber(a){
+	if(Number(a) === a && a % 1 === 0){
+		return true;
+	} else if (a === Number(a) && a % 1 !== 0){
+		return false;
+	};
+};
+
+function EvenNumber(a){
+	if(a%2 == 0){
+		return true;
+	} else if (a%2 !== 0){
+		return false;
+	};
+};
+
+function addSum(a){
+	var extra = 0;
+	for( i = 0; i <= a; i++){
+ 		extra = extra + i;
+	}
+ 		return(extra);
+ }; 		
+
+function arrayMethod(a){
+	var weekDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+	if (a <= 6 && a >= 0){
+		answer = weekDay[a];
+		return answer;
+	} else {
+		return("Please enter the number between o & 6")
+	};
+		return(answer);
+};
+
+
+function textBox (a, b){
+	if (!isNaN(a, b)){
+		result = a + b;
+		return result;
+	} else {
+		return("Please check the numbers")
+	}
+}
+</script>
+
+</html>
