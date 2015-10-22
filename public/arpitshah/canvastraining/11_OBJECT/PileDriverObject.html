@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+Pile Driver (Object)
+</head>
+<body>
+<!--
+
+!-->
+</body>
+<script>
+
+
+function piledriver(logo, type, model, eccentricMoment, eccentricWeight){
+	this.logo = logo;
+	this.typeofdriver = type;
+	this.modeltype = model;
+	this.mt = eccentricMoment;
+	this.mv = eccentricWeight;	
+	this.amplitude = function(){
+		if(this.mt == 25 && this.mv == 2){
+			var amp = (2*this.mt)/this.mv;
+			return amp;
+		} else if (this.mt == 30 && this.mv == 3){
+			var amp = (2*this.mt)/this.mv;
+			return amp;
+		}
+	}
+	}
+
+
+var svr25nf = new piledriver("Ozkanlar", "crane Hanging", "svr25nf", 25, 2);
+var svr30nf = new piledriver("Ozkanlar", "crane Hanging", "svr30nf", 30, 2);
+var svr50nf = new piledriver("Ozkanlar", "crane Hanging", "svr50nf", 50, 2);
+var svr101nf = new piledriver("Ozkanlar", "crane Hanging", "svr101nf", 101, 2);
+var svr202nf = new piledriver("Ozkanlar", "crane Hanging", "svr202nf", 202, 2);
+var svr14hf = new piledriver("Ozkanlar", "crane Hanging", "svr14hf", 14, 2);
+var svr25hf = new piledriver("Ozkanlar", "crane Hanging", "svr25hf", 25, 2);
+var svr10vm = new piledriver("Ozkanlar", "crane Hanging", "svr10vm", 10, 2);
+var svr18vm = new piledriver("Ozkanlar", "crane Hanging", "svr18vm", 18, 2);
+var svr24vm = new piledriver("Ozkanlar", "crane Hanging", "svr24vm", 24, 2);
+var svr36vm = new piledriver("Ozkanlar", "crane Hanging", "svr36vm", 36, 2);
+var svr48vm = new piledriver("Ozkanlar", "crane Hanging", "svr48vm", 48, 2);
+console.log(svr25nf);
+console.log(svr30nf);
+console.log(svr50nf);
+console.log(svr101nf);
+console.log(svr202nf);
+console.log(svr14hf);
+console.log(svr25hf);
+console.log(svr10vm);
+console.log(svr18vm);
+console.log(svr24vm);
+console.log(svr36vm);
+console.log(svr48vm);
+</script>
+
+</html>
