@@ -1,0 +1,87 @@
+.Head {
+	font-size: 16px;
+	background-color: #4279A5;
+	color: white;
+	padding-top: 22px;
+	padding-left: 11px;
+	padding-bottom: 22px;
+	height: 111px;
+	font-family: verdana;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navigation {
+	width: auto;
+	height: 27px;
+	background-color: #80B0DA;
+	font-size: 9.73333px;
+	font-family: Verdana;
+	color: white;
+	border: 1px solid white;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navigationRest {
+	width: auto;
+	height: 27px;
+	background-color: #578BB8;
+	font-size: 9.73333px;
+	font-family: Verdana;
+	color: white;
+	border: 1px solid white;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.firstDiv {
+	height: auto;
+	width: 990px;
+	font-family: verdana; 
+	font-size: 10.95px;
+	float: left;
+	color: #505069;
+}
+
+.secondDiv {
+	height: auto;
+	width: 170px;
+	font-family: verdana;
+	font-size: 9.73333px;
+	background-color: #FAFBFC;
+	border: 1px solid #C0C0C0;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #505069;
+	margin-top: 25px;
+}
+
+.thirdDivHeadSpan {
+	display: inline;
+	font-family: verdana;
+	font-size: 18.6167px;
+	padding-right: 10px;
+	color: #505069;
+}
+
+.divParagraph{
+	font-size: 10.95px;
+	font-family: Verdana;
+	color: #505069;
+	background-color: #FAFBFC;
+	height: auto;
+	width: 350px;
+}
