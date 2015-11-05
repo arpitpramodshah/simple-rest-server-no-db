@@ -48,21 +48,21 @@
 
 .firstDiv {
 	height: auto;
-	width: 990px;
+	width: 100%;
 	font-family: verdana; 
 	font-size: 10.95px;
 	float: left;
 	color: #505069;
+	float: left;
+	background-color: white;
 }
 
 .secondDiv {
 	height: auto;
-	width: 170px;
 	font-family: verdana;
 	font-size: 9.73333px;
 	background-color: #FAFBFC;
 	border: 1px solid #C0C0C0;
-	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: #505069;
@@ -83,5 +83,84 @@
 	color: #505069;
 	background-color: #FAFBFC;
 	height: auto;
-	width: 350px;
+	width: 80%;
+}
+
+.nestedMenu{
+	margin-bottom:20px;
+	font-size:10.95px;
+	color: #467AA6;
+}
+
+.nestedMenu li{
+	list-style:none; 
+	display:block;
+	padding:2px; 
+	margin-bottom:2px;
+	color: #467AA6;
+	margin-left: -25px;
+}
+
+.nestedMenu li a{
+	font-weight:bold; 
+	text-decoration:none;
+	color: #467AA6;
+}
+
+.nestedMenu li a:hover{
+	text-decoration:none;
+	color: #467AA6;
+}
+
+.nestedMenu li ul{
+	margin-top:3px;
+	margin-bottom:3px;
+	font-size:1em; 
+	font-weight:normal;
+	color: #467AA6;
+}
+
+.nestedMenu li ul li{
+	margin-bottom:0;
+	color: #467AA6;
+}
+
+.nestedMenu li ul a{
+	font-weight:normal;
+}
+
+#footer {
+	font-family: Verdana;
+	font-size: 10.95px;
+	background-color:#467AA7;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+#footer a {
+	font-family: Verdana;
+	font-size: 10.95px;
+	text-decoration:none;
+	color: white;
+	font-weight: bold;
+}
+
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+     border: 2px solid gray;
+     background-color: white;
+}
+
+.firstDiv1 {
+	height: auto;
+	width: 50%;
+	font-family: verdana; 
+	font-size: 10.95px;
+	float: left;
+	color: #505069;
+	float: left;
+	background-color: white;
 }
