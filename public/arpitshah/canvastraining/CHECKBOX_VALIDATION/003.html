@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="003.css"></link>
+<script src="003.js"></script>
+<head>
+When page loads, write code to hide elements all the elements with ids "main_one", "main_two" and "main_three".
+Create 10 check boxes. When you click a button called "Select All" - all the check boxes should be unchecked.
+Have called VALIDATE then it should check if the select boxes are selected or NOT. If yes, then alert the TEXT that were selected in each of these select boxes.
+Have two buttons - "CHECK URL" and "ADD LINK". The button "ADD LINK" to your favorite websites. Now on a click of "CHECK URL" button, check to see if "http://www.pro-tekconsulting.com" is included in these 5 anchors tags or not. If NO, then enable "ADD LINK" button. When you click on this "ADD LINK" button, Pro-Tek wesbite link should be added to the DOM.
+</head>
+<body>
+	<p id="main_one"> This is main_one Id contents.</p>
+	<p id="main_two"> This is main_two Id contents.</p>
+	<p id="main_three"> This is main_three Id contents.</p>
+	<form id="form">
+		<input type="checkbox" name="chkBox" id="chkBx1" value="First">First</br>
+		<input type="checkbox" name="chkBox" id="chkBx2" value="Second">Second</br>
+		<input type="checkbox" name="chkBox" id="chkBx3" value="Third">Third</br>
+		<input type="checkbox" name="chkBox" id="chkBx4" value="Fourth">Fourth</br>
+		<input type="checkbox" name="chkBox" id="chkBx5" value="Fifth">Fifth</br>
+		<input type="checkbox" name="chkBox" id="chkBx6" value="Sixth">Sixth</br>
+		<input type="checkbox" name="chkBox" id="chkBx7" value="Seven">Seven</br>
+		<input type="checkbox" name="chkBox" id="chkBx8" value="Eight">Eight</br>
+		<input type="checkbox" name="chkBox" id="chkBx9" value="Nine">Nine</br>
+		<input type="checkbox" name="chkBox" id="chkBx10" value="Ten">Ten</br>
+		<input type="button" onclick="selectAll(true, 10)" name="CheckAll" id="chkBxAll" value="Check All">
+		<input type="button" onclick="selectAll(false, 10)" name="UncheckAll" id="unChkBxAll" value="Uncheck All">
+		<input type="button" onclick="validate()" name="ValidateAll" id="chkValidate" value="Validate All">
+	</form>
+	<div id="addLink">
+		<a href="http://www1.macys.com/" id="macys">Macy's</a>
+		<a href="http://www.jcpenney.com/" id="jcpenney">Jcpenney</a>
+		<a href="http://www.kohls.com/" id="kohls">Kohl's</a>
+		<a href="http://www.walmart.com/" id="walmart">Walmart</a>
+		<a href="http://www.amazon.com/" id="amazon">Amazon</a>
+		<!--<a href="http://www.pro-tekconsulting.com" id="Pro-Tek">Pro-Tek</a>!-->
+		<input type="button" onclick="checkURL()" name="Check-URL" value="Check-URL" id="ChkURL"></input>
+		<input type="button" onclick="addLink()" name="Add-URL" value="Add-URL" id="AddURL" disabled></input>
+	</div>
+</body>
+</html>

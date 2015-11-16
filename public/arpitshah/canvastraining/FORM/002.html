@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <link type="text/css" rel="stylesheet" href="002.css"></link>
+  <script src="002.js"></script>
+  <head>
+    <!--Create a form with First Name, Last Name, radio buttons for Gender (Male and Female), drop down menu for State, a check box for I ACCEPT and a submit button. At the click of submit button, the following should be validated.
+
+    1 If the First Name and Last Name fields are left blank or has a number, the background color of the text box should change to red color.
+    2 If the Gender is not selected, alert the user to select at least one option.
+    3 If the State is not selected, alert the user to select a state.
+    4 If the check box is not selected, alert the user to check the box.!-->
+  </head>
+  <body>
+  	<form id="form"> 
+      <p>First name: <input type="text" name="firstname" id="firstName"></p> 
+      <p>Last name: <input type="text" name="lastname" id="lastName"></p>
+      <p>Gender: <input type="radio" name="Gender" value="Male"> Male
+    			       <input type="radio" name="Gender" value="Female">Female</p>
+    	<p>State: <select id="selectState">
+                  <option></option>
+          				<option value="NJ">NJ</option>
+          				<option value="NY">NY</option>
+          				<option value="PA">PA</option>
+          				<option value="TX">TX</option>
+    			     </select></p>
+      <p><input type="checkbox" value="Terms & Conditions" id="ckBoxIAccept">I Accept<p>
+    	<p><input type="button" onclick="validate(this.form)" value="Submit">
+        <input type="button" onclick="resetForm()" value="Reset"></p>
+    </form>
+  </body>
+</html>

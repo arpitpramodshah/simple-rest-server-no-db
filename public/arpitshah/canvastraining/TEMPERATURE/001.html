@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="001.css"></link>
+<script src="001.js"></script>
+<head>
+<p id="question">Write a program to convert Fahrenheit temperature to Celsius. Here are the things that needs to be implemented as a part of this question:
+Ask the input from the user for Fahrenheit using a text field
+As soon as the user types in the Fahrenheit number in the text field, the result should display immediately in the div below
+Hence, there should not be any submit button
+	Hint: Use onkeyup event. Formula is : C = (F - 32) * 5/9
+Don't display the decimal values - but you should accept decimal values from the user
+If the user enters any invalid values (strings) ) then you should make the input box border red and prompt user to enter correct values
+Have images, p tags, div tags and various other elements on the page. When the page loads, an alert saying "welcome to my blog" should pop up.
+Have several html tags on the page. Have an input button with id hideElems. When this button is clicked all the elements on the page should be hidden.
+Have an input button with id showElems. When this button is double clicked, all the elements on the page should be shown.
+Have an input button with a id and
+when you mouseover this button, the <!--<ul> elements on the page should be shown.
+when you mouseout this button, the <ul>!--> elements on the page should be hidden.</p>
+</head>
+<body>
+	<form id="form">
+		<p>Temp in Fahrenheit: <input type="text" onkeyup="convert()" name="Fahrenheit" id="TempF"></p>
+		<p>Temp in Celsius: <input type="text" onkeyup="convert()" name="Celsius" id="TempC"></p>
+		<p><input type="button" onclick="resetForm()" id="resetThisForm" value="Reset"></p>
+		<p><input type="button" onclick="hideElement()" id="hideElems" value="Hide Element">
+			<input type="button" ondblclick="displayElement()" id="showElems" value="Display Element">
+			<input type="button" onmouseover="hideElement()" onmouseout="displayElement()" id="magicButton" value="Hide&Seek">
+	</form>
+</body>
+</html>
