@@ -1,0 +1,14 @@
+#formDiv {
+	float: left;
+	width: 250px;
+}
+
+#viewDiv {
+	float: left;
+	width: 250px;
+}
+
+#btnEdit {
+	visibility: hidden;
+	width: 100%;
+}

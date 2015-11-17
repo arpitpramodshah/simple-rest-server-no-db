@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	Object Practice
+	</head>
+	<body>
+	<!--
+
+	!-->
+	</body>
+	<script>
+		var date1 = new Date();
+		Date.prototype.addHours = function(hours) {
+			this.setHours(this.getHours() + hours);
+			return this;
+		};
+
+		Date.prototype.addMinutes = function(minute){
+			this.setMinutes(this.getMinutes() + minute);
+			return this;
+		}
+		console.log(date1.addHours(5));
+		console.log(date1.addMinutes(50));
+
+	</script>
+</html>
