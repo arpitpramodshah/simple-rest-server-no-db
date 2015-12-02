@@ -4,9 +4,9 @@ $(document).ready(function() {
         //console.log($chkBoxFruit);
         if ($chkBoxFruit.is(':checked')) {
             var fruitValue = $(this).attr('id');
-            $("#myFruitCart").append("<span>" + fruitValue + "</span></br>");
+            $("#myFruitCart").append("<div>" + fruitValue + "</div>");
         } else {
-            var removeFruitArray = $('#myFruitCart').find('span');
+            var removeFruitArray = $('#myFruitCart').find('div');
             //console.log(removeFruitArray);
             for (var i = 0; i < removeFruitArray.length; i++) {
                 //console.log(removeFruitArray[i].innerHTML);
