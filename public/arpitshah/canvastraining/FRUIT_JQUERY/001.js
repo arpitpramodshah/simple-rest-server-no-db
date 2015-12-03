@@ -21,13 +21,11 @@ $(document).ready(function() {
     $("#myFruit").on("click", 'span', function() {
         var $chkBoxFruitSpan = $(this).html();
         var $previousCheckBox = $(this).prev();
-        console.log($previousCheckBox.prop("checked"));
+        //console.log($previousCheckBox.prop("checked"));
         if ($previousCheckBox.prop("checked") == false) {
-            console.log('hello');
             $previousCheckBox.prop("checked", true);
             $("#myFruitCart").append("<div>" + $chkBoxFruitSpan + "</div>");
         } else if ($previousCheckBox.prop("checked") == true) {
-            console.log('hi');
             $previousCheckBox.prop("checked", false);
             var removeFruitArraySpan = $('#myFruitCart').find('div');
             for (var j = 0; j < removeFruitArraySpan.length; j++) {
