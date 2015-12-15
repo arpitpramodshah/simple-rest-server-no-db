@@ -20,26 +20,25 @@ $(document).ready(function() {
                 $("#").append("<div>Gender: " + data.userGender + "</div>");
                 $("#").append("<div>State: " + data.userSelectedState + "</div>");
                 $("#").append("<div>Terms and Condition: " + data.userTermsAcceptance + "</div></br>");
+                $.getJSON("/users", function(data) {
+                    console.log(data);
+                    var getAllUsers = [];
+                    $.each(data, function(key, val) {
+                        getAllUsers.push(
+                            "<div>" + val.id +
+                            "</br>First Name: " + val.userFirstName +
+                            "</br> Last Name: " + val.userLastName +
+                            "</br> Gender: " + val.userGender +
+                            "</br> State: " + val.userSelectedState +
+                            "</br> Terms & Conditions: " + val.userTermsAcceptance +
+                            "</div></br>"
+                        );
+                    });
+                    $("<div/>", {
+                        html: getAllUsers.join("")
+                    }).appendTo("#userConfirmation");
+                });
             }
-        });
-
-        $.getJSON("/users", function(data) {
-            console.log(data);
-            var getAllUsers = [];
-            $.each(data, function(key, val) {
-                getAllUsers.push(
-                    "<div>" + val.id +
-                    "</br>First Name: " + val.userFirstName +
-                    "</br> Last Name: " + val.userLastName +
-                    "</br> Gender: " + val.userGender +
-                    "</br> State: " + val.userSelectedState +
-                    "</br> Terms & Conditions: " + val.userTermsAcceptance +
-                    "</div></br>"
-                );
-            });
-            $("<div/>", {
-                html: getAllUsers.join("")
-            }).appendTo("#userConfirmation");
         });
     })
 
