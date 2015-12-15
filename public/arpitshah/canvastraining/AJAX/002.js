@@ -20,8 +20,7 @@ $(document).ready(function() {
                 // $("#").append("<div>Terms and Condition: " + data.userTermsAcceptance + "</div></br>");
                 $.ajax({
                     type: "GET",
-                    url: "/users",
-                    dataType: "json",
+                    url: "/users/",
                     success: function(data) {
                         var getAllUsers = [];
                         $.each(data, function(key, val) {
