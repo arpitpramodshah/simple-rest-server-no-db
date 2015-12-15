@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    if (window.location.protocol.indexOf('http')) {
+        alert('wrong way')
+    }
+    </script>
+</head>
+
+<body>
+    <form id="form" action="/users" method="POST">
+        <p>First name:
+            <input type="text" name="firstname" id="firstName">
+        </p>
+        <p>Last name:
+            <input type="text" name="lastname" id="lastName">
+        </p>
+        <p>Gender:
+            <input type="radio" name="Gender" value="Male" id="Male"> Male
+            <input type="radio" name="Gender" value="Female" id="Female">Female</p>
+        <p>State:
+            <select name="State" id="selectState">
+                <option></option>
+                <option value="NJ">NJ</option>
+                <option value="NY">NY</option>
+                <option value="PA">PA</option>
+                <option value="TX">TX</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" value="Terms & Conditions" id="ckBoxIAccept" name="TermsAndCondition">I Accept
+        </p>
+        <p>
+            <input type="submit" value="Submit" id="Submit">
+            <input type="button" value="Reset" id="Reset">
+        </p>
+    </form>
+    <div id='userConfirmation'></div>
+</body>
+
+</html>
