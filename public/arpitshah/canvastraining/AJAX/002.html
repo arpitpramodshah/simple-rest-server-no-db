@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="002.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="002.js"></script>
+
+<head></head>
+
+<body>
+    <form id="form">
+        <p>First name:
+            <input type="text" name="firstname" id="firstName">
+        </p>
+        <p>Last name:
+            <input type="text" name="lastname" id="lastName">
+        </p>
+        <p>Gender:
+            <input type="radio" class="Gender" name="Gender" value="Male" id="Male"> Male
+            <input type="radio" class="Gender" name="Gender" value="Female" id="Female">Female</p>
+        <p>State:
+            <select id="selectState" name="State">
+                <option></option>
+                <option value="NJ">NJ</option>
+                <option value="NY">NY</option>
+                <option value="PA">PA</option>
+                <option value="TX">TX</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" value="Accepted" id="ckBoxIAccept" name="Accepted" id="Accepted">I Accept
+            <p>
+                <p>
+                    <input type="button" value="Submit" id="Submit">
+                    <input type="button" value="Reset" id="Reset">
+                </p>
+    </form>
+    <div id='userConfirmation'></div>
+</body>
+
+</html>
